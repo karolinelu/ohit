@@ -72,5 +72,5 @@ function update() {
 	c2 = arc(50, 50, outer_c, 2);
 
 	// check if within bounds
-
 }
+addEventListener("load", onLoad);
