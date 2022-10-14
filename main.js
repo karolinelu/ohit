@@ -5,6 +5,7 @@ description = `
 `;
 
 characters = [];
+let colors = ['red', 'purple'];
 
 options = {
 	theme: "shapeDark",
@@ -62,12 +63,13 @@ function update() {
 			inner_c = rnd(10, 45);
 			outer_c = inner_c + 7;
 			addScore(10);
-			color("black");
+			color('black');
 			particle(50, 50, 100, 3);
+	
 
 		}
 	}
-	color("purple");
+	color(colors[rndi(0,2)]);
 	c1 = arc(50, 50, inner_c, 2);
 	c2 = arc(50, 50, outer_c, 2);
 
